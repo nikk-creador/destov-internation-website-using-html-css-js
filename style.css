@@ -12,11 +12,9 @@ html{
     scroll-behavior: smooth;
 }
 .logo img{
-    position: relative;
-    right: 420px;
-    width: 160px;
+
+    width: 150px;
 }
-/* custom scroll bar */
 ::-webkit-scrollbar {
     width: 10px;
 }
@@ -382,7 +380,7 @@ section .title::after{
     background-color: #F5F5F5;
 }
 .whyus .title::after{
-    content: "what i know";
+    /* content: "what i know"; */
     background-color: #F5F5F5;
 }
 
@@ -703,14 +701,19 @@ footer span a:hover{
 }
 
 /* price*/
+#price{
+    background-color: #F5F5F5;
+    padding-top: 0;
+}
 .card-pricing.popular {
     z-index: 1;
     border: 3px solid #2C5D63;
 }
 .card-pricing .list-unstyled li {
     padding: .5rem 0;
-    color: #c1ea0b;
+    color: #2C5D63;
 }
+
  
 
   .social{
