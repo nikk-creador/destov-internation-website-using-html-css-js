@@ -251,7 +251,7 @@ section .title::after{
 .home .home-content a{
     display: inline-block;
     background:  #c1ea0b;
-    color: #283739;
+    color: #06113C;
     font-size: 25px;
     padding: 12px 36px;
     margin-top: 20px;
@@ -329,7 +329,7 @@ section .title::after{
     background-color: #F5F5F5;
 }
 .services, .products{
-    color: #2C5D63;
+    color: #283739;
     background: #F5F5F5;
 }
 .services .title::before,
@@ -353,7 +353,7 @@ section .title::after{
     transition: all 0.3s ease;
 }
 .services .serv-content .card:hover{
-    background:  /*#283739;*/ #203018;
+    background:  /*#06113C;*/ #203018;
 }
 .services .serv-content .card .box{
     transition: all 0.3s ease;
@@ -363,6 +363,7 @@ section .title::after{
 }
 .services .serv-content .card i{
     font-size: 50px;
+   
     color:  #F5F5F5;
     transition: color 0.3s ease;
 }
@@ -407,7 +408,7 @@ section .title::after{
     transition: all 0.3s ease;
 }
 .products .carousel .card:hover{
-    background:  #283739;
+    background:  #06113C;
 }
 .products .carousel .card .box{
     display: flex;
@@ -575,16 +576,39 @@ footer span a:hover{
 
 /* responsive media query start */
 @media (max-width: 1104px) {
-    .about .about-content .left img{
+    .about .about-content .left img .overlay{
         height: 350px;
         width: 350px;
+    }
+    @media (max-width:1104px) {
+        .overlay{
+            margin: 10px;
+        }
+  
+        .overlay{
+            width: 50%;
+            display: inline-block;
+            background-color: green;
+        }
+
+        
     }
 }
 
 @media (max-width: 991px) {
-    .max-width{
+    .max-width .overlay{
         padding: 0 50px;
     }
+    .overlay{
+        margin: 10px;
+    }
+
+    .overlay{
+        width: 50%;
+        display: inline-block;
+        background-color: green;
+    }
+
 }
 @media (max-width: 947px){
     .menu-btn{
@@ -605,10 +629,10 @@ footer span a:hover{
         padding-top: 80px;
         transition: all 0.3s ease;
     }
-    .navbar .menu.active{
+    .navbar .menu.active .overlay{
         left: 0;
     }
-    .navbar .menu li{
+    .navbar .menu li .overlay{
         display: block;
     }
     .navbar .menu li a{
@@ -649,10 +673,20 @@ footer span a:hover{
         width: 100%;
         margin-bottom: 35px;
     }
+    .overlay{
+        margin: 10px;
+    }
+
+    .overlay{
+        width: 50%;
+        display: inline-block;
+        background-color: green;
+    }
+
 }
 
 @media (max-width: 690px) {
-    .max-width{
+    .max-width .overlay{
         padding: 0 23px;
     }
     .home .home-content .text-2{
@@ -667,6 +701,16 @@ footer span a:hover{
     .services .serv-content .card{
         width: 100%;
     }
+    .overlay{
+        margin: 10px;
+    }
+
+    .overlay{
+        width: 50%;
+        display: inline-block;
+        background-color: green;
+    }
+
 }
 
 @media (max-width: 500px) {
@@ -698,6 +742,16 @@ footer span a:hover{
         font-size: 23px;
         line-height: 38px;
     }
+    .overlay{
+        margin: 10px;
+    }
+
+    .overlay{
+        width: 75%;
+        display: inline-block;
+        background-color: green;
+    }
+
 }
 
 /* price*/
